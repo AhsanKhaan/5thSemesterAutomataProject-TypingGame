@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="rootpane" maxHeight="300.0" maxWidth="600.0" minHeight="300.0" minWidth="600.0" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pro.StartController">
+   <children>
+      <ImageView fx:id="imageview" fitHeight="300.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="text" layoutX="222.0" layoutY="45.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-fill: white;" text="null" underline="true">
+         <font>
+            <Font name="Calibri Bold Italic" size="45.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#bc5f29" />
+                  <Stop color="#bc5f29" offset="0.011494252873563218" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <TextField fx:id="input" layoutX="217.0" layoutY="253.0" onAction="#OnEnter" />
+      <Label fx:id="label" layoutX="413.0" layoutY="253.0" lineSpacing="10.0" style="-fx-text-fill: white;" text="Label" underline="true">
+         <font>
+            <Font name="Calibri Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="471.0" layoutY="11.0" mnemonicParsing="false" onAction="#gameover" opacity="0.65" prefHeight="25.0" prefWidth="115.0" text="GameOver">
+         <textFill>
+            <LinearGradient endX="0.7285714285714286" endY="1.0" startX="0.7428571428571429" startY="0.44761904761904764">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#4343d1" offset="0.26804123711340205" />
+                  <Stop color="#4343d3" offset="0.7654145435873128" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+   </children>
+</AnchorPane>
